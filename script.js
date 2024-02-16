@@ -73,6 +73,7 @@ const cards = [
       firstCard = card;
     } else if (secondCard === null && card !== firstCard) {
       secondCard = card;
+      canFlip = false;
       
       // CHECK IF THE TWO FLIPPED CARDS MATCH
       if (firstCard.value === secondCard.value) {
@@ -84,6 +85,7 @@ const cards = [
           checkIfAllMatched();
           firstCard = null;
           secondCard = null;
+          canFlip = true;
         }, 0.600);
       } else {
         setTimeout(() => {
