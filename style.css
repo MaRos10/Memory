@@ -6,6 +6,18 @@
     font-family: "Amatic SC", sans-serif;
 } 
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(/images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .cardboard {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -20,12 +32,13 @@ h1 {
     padding: 5rem 0rem;
     font-size: 5rem;
     letter-spacing: 0.3rem;
+    color: rgb(48, 44, 122);;
 }
 
 .card {
     width: 100px;
     height: 100px;
-    background-color: #BD93D8;
+    background-color: rgb(171, 95, 204); /* #BD93D8; */
     border-radius: 5px;
     font-size: 55px; 
     text-align: center; 
@@ -35,15 +48,15 @@ h1 {
 
 /* FINISHED GAME - MESSAGE */
 .message {
-    background-color: #7BCDBA;
+    background-color: #efba7c;
     color: rgb(18, 15, 73);
-    padding: 25px;
-    border-radius: 10px;
+    padding: 20px;
+    border-radius: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 2.5em; 
+    font-size: 3.2rem; 
     z-index: 1; /* Placerar meddelandet över korten */
     text-align: center;
     visibility: hidden;
@@ -70,5 +83,3 @@ h1 {
       max-width: 340px;
     }
   }
-
-  /*   background: linear-gradient(217deg,rgb(198, 131, 198), blue) */
